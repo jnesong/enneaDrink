@@ -16,8 +16,8 @@ p {
   background-image: linear-gradient(to left, rgb(75, 113, 92), rgb(61, 106, 82), rgb(52, 92, 71), rgb(36, 74, 54), rgb(23, 57, 39), rgb(7, 36, 21), rgb(1, 16, 8));   
   -webkit-background-clip: text;
   color: transparent;
-  line-height: 35px;
-  letter-spacing: 2px;
+  line-height: 40px;
+  letter-spacing: 1px;
   padding-top: 40px;
   padding-left: 70px;
   padding-right: 70px;
@@ -28,6 +28,10 @@ h1 {
   color:  rgb(23, 57, 39);
   letter-spacing: 4px;
 }
+
+.space {
+  white-space: pre-wrap;
+} 
 
 /* images */
 /* images */

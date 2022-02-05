@@ -34,16 +34,24 @@ function EnneadrinkInfo() {
         setContent(enneadrink.about)
     }
     function handleStrengthsClick (){
-        setContent(enneadrink.about)
+        setContent(enneadrink.strengths)
     }
     function handleWeaknessesClick (){
-        setContent(enneadrink.about)
+        setContent(enneadrink.weaknesses)
     }
     function handlePracticesClick (){
-        setContent(enneadrink.about)
+        let practicesList = enneadrink.practices.map ( practice => (
+            practice.title + "\n"
+        ))
+        setContent(practicesList)
     }
     function handleLevelsClick (){
-        setContent(enneadrink.about)
+        let healthsList = enneadrink.healths.map ( health => (
+
+            `${health.level} : ${health.description}` + "\n"
+
+        ))
+        setContent(healthsList)
     }
 
     let displayedContent = <p>{content}</p>
@@ -58,7 +66,11 @@ function EnneadrinkInfo() {
         {<br/>}
         {<br/>}
         <h1>{enneadrink.title}</h1>
+
+        <div className="space">
         {displayedContent}
+        </div>
+       
         </div>
     )
 
