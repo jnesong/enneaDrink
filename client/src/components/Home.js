@@ -1,19 +1,26 @@
 import { Outlet } from "react-router-dom";
-import DrinkNavBar from "./DrinkNavBar";
-import EnneadrinkInfo from "./EnneadrinkInfo";
 import plant2 from "./icons/plant2.gif";
+import DrinkNavBar from "./DrinkNavBar";
+import Logon from "./User/Logon";
 
-function Home () {
-    
+
+function Home() {
+
 
     return (
         <>
+            <DrinkNavBar />
+            
+            <Outlet />
 
-        <DrinkNavBar />
+            {<br />}
+            {<br />}
+            {<br />}
+            {<br />}
 
-        <Outlet />
+            <Logon />
 
-        <img className={"plant"} src={plant2} alt="plant gif" />
+            <img className={"plant"} src={plant2} alt="plant gif" />
 
         </>
     )

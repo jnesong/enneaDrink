@@ -99,11 +99,11 @@ practice401 = Practice.create(enneadrink_id: espresso.id, title: "Journaling tha
 practice402 = Practice.create(enneadrink_id: espresso.id, title: "Regular meals in community/with others", description: "NA")
 practice403 = Practice.create(enneadrink_id: espresso.id, title: "Consider: I am the combined effort of everyone I've ever known.", description: "Uncle Iroh: I don't know the answer. Sometimes life is like this dark tunnel. You can't always see the light at the end of the tunnel, but if you just keep moving, you will come to a better place.")
 
-practice501 = Practice.create(enneadrink_id: latte.id, title: "Sharing- your heart, head, and hands", description: "NA")
+practice501 = Practice.create(enneadrink_id: latte.id, title: "Sharing your thoughts", description: "NA")
 practice502 = Practice.create(enneadrink_id: latte.id, title: "Reading books", description: "NA")
 practice503 = Practice.create(enneadrink_id: latte.id, title: "Consider: There's bravery in being vulnerable.", description: "Uncle Iroh: It is important to draw wisdom from many different places. If you take it from only one place, it becomes rigid and stale.")
 
-practice601 = Practice.create(enneadrink_id: lemon.id, title: "Memorizing grounding truths.", description: "NA")
+practice601 = Practice.create(enneadrink_id: lemon.id, title: "Memorizing grounding truths", description: "NA")
 practice602 = Practice.create(enneadrink_id: lemon.id, title: "Prayer or meditation", description: "NA")
 practice603 = Practice.create(enneadrink_id: lemon.id, title: "Consider: It's OK to trust.", description: "Uncle Iroh: You are stronger and wiser and freer than you have ever been.")
 

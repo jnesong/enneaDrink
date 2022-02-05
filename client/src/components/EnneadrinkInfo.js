@@ -1,8 +1,5 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import plant2 from "./icons/plant2.gif";
-
-
 
 function EnneadrinkInfo() {
     const [error, setError] = useState(null);
@@ -15,40 +12,43 @@ function EnneadrinkInfo() {
     useEffect(() => {
         const abortCont = new AbortController();
 
-      fetch(fetchPath, { signal: abortCont.signal})
-        .then(r => r.json())
-        .then(data => setEnneadrink(data))
-        .catch(err => {
-            if (err.name === 'AbortError') {
-                console.log('fetch aborted');
-            } else {setError(err.message)}
-;        })
+        fetch(fetchPath, { signal: abortCont.signal })
+            .then(r => r.json())
+            .then(data => setEnneadrink(data))
+            .catch(err => {
+                if (err.name === 'AbortError') {
+                    console.log('fetch aborted');
+                } else { setError(err.message) }
+                ;
+            })
         return () => abortCont.abort()
-    }, [fetchPath]);  
+    }, [fetchPath]);
 
     console.log(enneadrink)
 
     const [content, setContent] = useState("")
 
-    function handleAboutClick (){
+    function handleAboutClick() {
         setContent(enneadrink.about)
     }
-    function handleStrengthsClick (){
+
+
+    function handleStrengthsClick() {
         setContent(enneadrink.strengths)
     }
-    function handleWeaknessesClick (){
+    function handleWeaknessesClick() {
         setContent(enneadrink.weaknesses)
     }
-    function handlePracticesClick (){
-        let practicesList = enneadrink.practices.map ( practice => (
+    function handlePracticesClick() {
+        let practicesList = enneadrink.practices.map(practice => (
             practice.title + "\n"
         ))
         setContent(practicesList)
     }
-    function handleLevelsClick (){
-        let healthsList = enneadrink.healths.map ( health => (
+    function handleLevelsClick() {
+        let healthsList = enneadrink.healths.map(health => (
 
-            `${health.level} : ${health.description}` + "\n"
+            `${health.level} : ${health.description} \n`
 
         ))
         setContent(healthsList)
@@ -56,22 +56,25 @@ function EnneadrinkInfo() {
 
     let displayedContent = <p>{content}</p>
 
-    return (
-        <div className="topMargin">
-        <button className="menuItem" onClick={handleAboutClick}> About </button>
-        <button className="menuItem" onClick={handleStrengthsClick}> Strengths </button>
-        <button className="menuItem" onClick={handleWeaknessesClick}> Weaknesses </button>
-        <button className="menuItem" onClick={handlePracticesClick}> Helpful Practices </button>
-        <button className="menuItem" onClick={handleLevelsClick}> Health Levels </button>
-        {<br/>}
-        {<br/>}
-        <h1>{enneadrink.title}</h1>
+    console.log(error)
 
-        <div className="space">
-        {displayedContent}
-        </div>
-       
-        </div>
+    return (
+        <>
+            <div className="topMargin">
+                <button className="menuItem" onClick={handleAboutClick}> About </button>
+                <button className="menuItem" onClick={handleStrengthsClick}> Strengths </button>
+                <button className="menuItem" onClick={handleWeaknessesClick}> Weaknesses </button>
+                <button className="menuItem" onClick={handlePracticesClick}> Helpful Practices </button>
+                <button className="menuItem" onClick={handleLevelsClick}> Health Levels </button>
+                {<br />}
+                {<br />}
+
+                <div className="space">
+                    {displayedContent}
+                </div>
+
+            </div>
+        </>
     )
 
 
