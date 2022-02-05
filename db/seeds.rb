@@ -27,7 +27,7 @@ tea = Enneadrink.create(drink: "tea", number: 2, title: "the loving", emoji: "�
     weaknesses: "Teas battle shame and a sense of worthlessness if they aren’t needed by others. Ironically, this leads to a form of pride that unconsciously motivates Teas in the sense that their service of others can be motivated by their own self-interest and need for approval. This can lead to people-pleasing, over-attachment to people, and the fear of man. Unhealthy Teas also deny their own needs. They are energized by meeting others’ needs but fear having the tables turned since it compromises their survival strategy of being the caregiver."
 )
 
-sparkling = Enneadrink.create(drink: "sparkling water", number: 3, title: "the effective", emoji: "🪡",
+sparkling = Enneadrink.create(drink: "sparkling", number: 3, title: "the effective", emoji: "🪡",
     about: "Sparkling Waters see the world in terms of accomplishments and achievements. 
     Life is about being productive, getting things done, accomplishing goals, and winning.
     Above all, Sparkling Waters want to be the best at whatever they do, basically doing whatever it takes to shine.
@@ -104,7 +104,7 @@ juice = Enneadrink.create(drink: "juice", number: 8, title: "the powerful", emoj
     weaknesses: "The underlying emotion Juices are trying to conquer is guilt, feeling as though they aren’t good enough. Their survival strategy is to be powerful and take control. This leads to their besetting struggle with lust—the passion for power. They become very angry, confrontational and aggressive and throw their weight around. People can feel dominated, controlled, and belittled by Juices, but rarely do Juices notice how they make others feel. They can be emotional bulldozers."
 )
 
-hotcocoa = Enneadrink.create(drink: "hot cocoa", number: 9, title: "the peaceful", emoji: "🌈",
+hotcocoa = Enneadrink.create(drink: "cocoa", number: 9, title: "the peaceful", emoji: "🌈",
     about: "Hot Cocoas value peace, harmony, unity, and wholeness.
     For a Hot Cocoa, life is about bringing people together and being at peace personally and interpersonally.
     Hot Cocoas tend to go with the flow and want to avoid rocking the boat, i.e.,
