@@ -24,7 +24,7 @@ function EnneadrinkInfo() {
         return () => abortCont.abort()
     }, [fetchPath]);
 
-    console.log(enneadrink)
+    // console.log(enneadrink)
 
     const [content, setContent] = useState("")
 
