@@ -1,39 +1,39 @@
 const QuizBank = [
     {
         question: "I can readily define success.",
-        id: 1,
+        id: 0,
         answerA: "Agree",
-        idNextQuestionA: 2,
-        answerB: "Disagree",
-        idNextQuestionB: 15
-    },
-    {
-        question: "I am temperamental.",
-        id: 2,
-        answerA: "Agree",
-        idNextQuestionA: 3,
+        idNextQuestionA: 1,
         answerB: "Disagree",
         idNextQuestionB: 14
     },
     {
+        question: "I am temperamental.",
+        id: 1,
+        answerA: "Agree",
+        idNextQuestionA: 2,
+        answerB: "Disagree",
+        idNextQuestionB: 13
+    },
+    {
         question: "I readily compare myself to others or my past self.",
-        id: 3,
+        id: 2,
         answerA: "Yes",
-        idNextQuestionA: 4,
+        idNextQuestionA: 3,
         answerB: "No",
-        idNextQuestionB: 12
+        idNextQuestionB: 11
     },
     {
         question: "I lean towards discussing moral issues.",
-        id: 4,
+        id: 3,
         answerA: "Yes",
-        idNextQuestionA: 6,
+        idNextQuestionA: 5,
         answerB: "No",
-        idNextQuestionB: 5,
+        idNextQuestionB: 4,
     },
     {
         question: "I am more...",
-        id: 5,
+        id: 4,
         answerA: "Impulsive",
         drinkResultA: "Juice",
         answerB: "Disciplined",
@@ -41,7 +41,7 @@ const QuizBank = [
     },
     {
         question: "I prefer to...",
-        id: 6,
+        id: 5,
         answerA: "help people",
         drinkResultA: "Tea",
         answerB: "leave people to their own devices",
@@ -49,7 +49,7 @@ const QuizBank = [
     },
     {
         question: "I am known as a golden child or role model.",
-        id: 7,
+        id: 6,
         answerA: "Yes",
         drinkResultA: "Sparkling Water",
         answerB: "No",
@@ -57,7 +57,7 @@ const QuizBank = [
     },
     {
         question: "I generally trust myself.",
-        id: 8,
+        id: 7,
         answerA: "Agree",
         drinkResultA: "Latte",
         answerB: "Disagree",
@@ -65,15 +65,15 @@ const QuizBank = [
     },
     {
         question: "A clean appearance is important to me.",
-        id: 9,
+        id: 8,
         answerA: "Agree",
-        idNextQuestionA: 7,
+        idNextQuestionA: 6,
         answerB: "Disagree",
-        idNextQuestionB: 8
+        idNextQuestionB: 7
     },
     {
         question: "An orderly appearance is important to me.",
-        id: 10,
+        id: 9,
         answerA: "Agree",
         drinkResultA: "Sparkling Water",
         answerB: "Disagree",
@@ -81,7 +81,7 @@ const QuizBank = [
     },
     {
         question: "I tend to be...",
-        id: 11,
+        id: 10,
         answerA: "decisive",
         drinkResultA: "Tea",
         answerB: "indecisive",
@@ -89,15 +89,15 @@ const QuizBank = [
     },
     {
         question: "In relationships, I am more often like...",
-        id: 12,
+        id: 11,
         answerA: "an older sibling",
-        idNextQuestionA: 10,
+        idNextQuestionA: 9,
         answerB: "a younger sibling",
-        idNextQuestionB: 11
+        idNextQuestionB: 10
     },
     {
         question: "I can spend a lot of time on social media.",
-        id: 13,
+        id: 12,
         answerA: "Agree",
         drinkResultA: "Sparkling Water",
         answerB: "Disagree",
@@ -105,47 +105,47 @@ const QuizBank = [
     },
     {
         question: "I prefer to...",
-        id: 14,
+        id: 13,
         answerA: "help people",
-        idNextQuestionA: 12,
+        idNextQuestionA: 11,
         answerB: "leave people to their own devices",
-        idNextQuestionB: 9
+        idNextQuestionB: 8
     },
     {
         question: "I prefer...",
-        id: 15,
+        id: 14,
         answerA: "familiar patterns",
-        idNextQuestionA: 14,
+        idNextQuestionA: 13,
         answerB: "new adventures",
-        idNextQuestionB: 16
+        idNextQuestionB: 15
     },
     {
         question: "I am inclined to be...",
-        id: 16,
+        id: 15,
         answerA: "envious or competitive",
-        idNextQuestionA: 17,
+        idNextQuestionA: 16,
         answerB: "well-wishing",
-        idNextQuestionB: 18
+        idNextQuestionB: 17
     },
     {
         question: "I prefer to use my energy to sort out my...",
-        id: 17,
+        id: 16,
         answerA: "tasks or plans",
-        idNextQuestionA: 19,
+        idNextQuestionA: 18,
         answerB: "thoughts or feelings",
-        idNextQuestionB: 20
+        idNextQuestionB: 19
     },
     {
         question: "I prefer...",
-        id: 18,
+        id: 17,
         answerA: "solo work",
-        idNextQuestionA: 13,
+        idNextQuestionA: 12,
         answerB: "social settings",
-        idNextQuestionB: 21
+        idNextQuestionB: 20
     },
     {
         question: "I can spend a lot of time on social media.",
-        id: 19,
+        id: 18,
         answerA: "Agree",
         drinkResultA: "Sparkling Water",
         answerB: "Disagree",
@@ -153,7 +153,7 @@ const QuizBank = [
     },
     {
         question: "I am more interested in exploring...",
-        id: 20,
+        id: 19,
         answerA: "truth/reality",
         drinkResultA: "Latte",
         answerB: "love",
@@ -161,10 +161,12 @@ const QuizBank = [
     },
     {
         question: "I am more interested in...",
-        id:21,
+        id:20,
         answerA: "long term community",
         drinkResultA: "Tea",
         answerB: "independence or short term community",
         drinkResultB: "Smoothie"
     }
 ]
+
+export default QuizBank;
