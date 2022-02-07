@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
-import enneadrink1 from './icons/enneadrink1.jpg';
-import enneadrink2 from './icons/enneadrink2.jpg';
-import enneadrink3 from './icons/enneadrink3.jpg';
-import enneadrink4 from './icons/enneadrink4.jpg';
-import enneadrink5 from './icons/enneadrink5.jpg';
-import enneadrink6 from './icons/enneadrink6.jpg';
-import enneadrink7 from './icons/enneadrink7.jpg';
-import enneadrink8 from './icons/enneadrink8.jpg';
-import enneadrink9 from './icons/enneadrink9.jpg';
+import enneadrink1 from './icons/enneadrink1.png';
+import enneadrink2 from './icons/enneadrink2.png';
+import enneadrink3 from './icons/enneadrink3.png';
+import enneadrink4 from './icons/enneadrink4.png';
+import enneadrink5 from './icons/enneadrink5.png';
+import enneadrink6 from './icons/enneadrink6.png';
+import enneadrink7 from './icons/enneadrink7.png';
+import enneadrink8 from './icons/enneadrink8.png';
+import enneadrink9 from './icons/enneadrink9.png';
 
 function DrinkNavBar() {
     return (

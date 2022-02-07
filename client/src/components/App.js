@@ -8,12 +8,14 @@ import Quiz from "./User/Quiz/Quiz";
 import Result from "./User/Quiz/Result";
 import Description from "./Description";
 import HealthDescription from "./HealthDescription";
+import EnneadrinkIndex from "./EnneadrinkIndex";
+import HomeIndex from "./HomeIndex";
 
 function App() {
 
-const [displayedContent, setDisplayedContent] = useState("")
+  const [displayedContent, setDisplayedContent] = useState("")
 
-  function holdDisplay (content) {
+  function holdDisplay(content) {
     setDisplayedContent(content)
   }
 
@@ -22,13 +24,15 @@ const [displayedContent, setDisplayedContent] = useState("")
 
       <Routes>
 
-        <Route path="/" element={<Home />}>
-          <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay}/>}>
-            <Route path="about" element={<Description content={displayedContent}/>} />
-            <Route path="strengths" element={<Description content={displayedContent}/>} />
-            <Route path="weaknesses" element={<Description content={displayedContent}/>} />
-            <Route path="practices" element={<Description content={displayedContent}/>} />
-            <Route path="health" element={<HealthDescription content={displayedContent}/>} />
+        <Route path="/*" element={<Home />}>
+        <Route index element={<HomeIndex />} />
+          <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
+            <Route index element={<EnneadrinkIndex />} />
+            <Route path="about" element={<Description content={displayedContent} />} />
+            <Route path="strengths" element={<Description content={displayedContent} />} />
+            <Route path="weaknesses" element={<Description content={displayedContent} />} />
+            <Route path="practices" element={<Description content={displayedContent} />} />
+            <Route path="health" element={<HealthDescription content={displayedContent} />} />
           </Route>
         </Route>
 

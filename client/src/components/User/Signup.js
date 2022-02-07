@@ -32,7 +32,7 @@ function Signup({ baseURL }) {
             if (response.ok) {
                 response.json().then((user) => setUser(user));
                 setButtonDisplay("✔ signup confirmed, thank you!");
-                setTimeout(() => {navigate("/home")}, 900);
+                setTimeout(() => { navigate("/home") }, 900);
             } else {
                 response.json().then((errors) => {
                     console.error(errors);
@@ -40,7 +40,7 @@ function Signup({ baseURL }) {
                 });
             }
         })
-            .catch(err => {setError(err.message)});
+            .catch(err => { setError(err.message) });
     };
 
     console.log(user)
@@ -90,6 +90,7 @@ function Signup({ baseURL }) {
                 </div>
 
             </form>
+
         </div>
     );
 }

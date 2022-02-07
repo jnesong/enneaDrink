@@ -88,7 +88,8 @@ nav a {
   margin: 50px;
 }
 
-.enlarge3 {
+.enlarge3,
+.enlarge4 {
   transition: transform .7s;
   text-align: center;
   font-family: "Optima", sans-serif;
@@ -108,6 +109,11 @@ nav a {
 
 .enlarge3:hover {
   color: rgb(166, 186, 178);
+  transform: scale(1.2); 
+}
+
+.enlarge4:hover {
+  color: white;
   transform: scale(1.2); 
 }
 
@@ -197,8 +203,8 @@ a.quizLink:hover {
   letter-spacing: 2px;
 }
 .buttonSubmit:hover {
-  background-color:white;
-  color: rgb(166, 186, 178);
+  background-color:166, 186, 178;
+  color: white;
 }
 
 .buttonLogout {
@@ -245,7 +251,7 @@ a.quizLink:hover {
 
 .login {
   font-size: 25px;
-  background-color: white;
+  background-color: rgb(166, 186, 178);
   text-align: center;
   width: 100%;
   height: 100%;
@@ -254,8 +260,10 @@ a.quizLink:hover {
 
 .input-login {
   width: 20%;
-  padding: 20px;
-  background-color: white;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: rgb(166, 186, 178);
 }
 
 input[type=text],
@@ -276,9 +284,15 @@ input[type=password]:focus {
 }
 
 ::placeholder {
-  color: rgb(166, 186, 178);
+  color: rgb(23, 57, 39);
   font-family: "Optima", sans-serif;
   text-align:center
+}
+
+.greyBody {
+  background-color:rgb(166, 186, 178);
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 
@@ -290,6 +304,7 @@ input[type=password]:focus {
 .emoji {
   font-size: 100px;
 }
+
 
 ul {
   list-style-type: none;
