@@ -1,6 +1,6 @@
 puts "🌱 Seeding enneadrink data..."
 
-water = Enneadrink.create(drink: "water", number: 1, title: "the good", emoji: "💧",
+water = Enneadrink.create(drink: "water", number: 1, title: "the good", emoji: "🌊",
     about: "Waters are attracted to and value goodness.
     They believe life is about doing your best, setting high standards and goals and living up to them. Many Waters report growing up in families with high standards and the pressure to perform, often being criticized for their mistakes. As a result, they developed a fear of failure and an incessant need to be perfect and good enough, unconsciously seeking to earn the love and acceptance of their caregivers. They become model children who are motivated to ‘be good,’ ‘try harder’ and ‘get it right.’ As adults, Waters are sometimes described as obsessive compulsive, always trying to perfect and make things better. There is always room for improvement for Waters. They are critical toward others’ mistakes and especially critical toward their own. Their drive for perfection often leads them to reform what is broken and can be a blessing. However, it can also be a burden, leading to a deep sense of anger and guilt.",
     strengths: "Waters live with conviction, are bold and courageous. 
@@ -18,7 +18,7 @@ tea = Enneadrink.create(drink: "tea", number: 2, title: "the loving", emoji: "�
     Ironically, this leads to a form of pride that unconsciously motivates Teas in the sense that their service of others can be motivated by their own self-interest and need for approval. This can lead to people-pleasing, over-attachment to people, and the fear of man. Unhealthy Teas also deny their own needs. They are energized by meeting others’ needs but fear having the tables turned since it compromises their survival strategy of being the caregiver."
 )
 
-sparkling = Enneadrink.create(drink: "sparkling water", number: 3, title: "the effective", emoji: "🍾",
+sparkling = Enneadrink.create(drink: "sparkling water", number: 3, title: "the effective", emoji: "✨",
     about: "Sparkling Waters see the world in terms of accomplishments and achievements. 
     Life is about being productive, getting things done, accomplishing goals, and winning. Above all, Sparkling Waters want to be the best at whatever they do, basically doing whatever it takes to shine. It’s possible that Sparkling Waters grew up in an environment where there was a high value on looking presentable and put together or maybe there was an unusual emphasis on excellence and being the best. There was a greater emphasis on how you looked and how you performed and less emphasis on who you were. As a result, Sparkling Waters learned to use popularity and the image of success as a way to feel loved and accepted rather than receiving love through vulnerability and trust. Sparkling Waters are driven by 3 C’s: Competency, Comparison, and Competition. This can lead Sparkling Waters to accomplish great things, but it can also lead to self-promotion and exaggerated feelings of shame.",
     strengths: "Sparkling Waters are effective, competent, and adaptable. 
@@ -27,7 +27,7 @@ sparkling = Enneadrink.create(drink: "sparkling water", number: 3, title: "the e
     The underlying emotion they are trying to resolve is shame. Whereas Waters desire to be perfect, Sparkling Waters desire to look perfect. Unhealthy Sparkling Waters relate through performance and perception, striving to be or at least be seen as good enough. The question Sparkling Waters are asking is, 'Who am I if I’m not seen as successful?' Sparkling Waters tend to shine on the outside in whatever they do, while their inner life remains disconnected. Preoccupied with speed and efficiency in accomplishing their goals, Sparkling Waters rarely slow down and press inward to get in touch with their emotions."
 )
 
-espresso = Enneadrink.create(drink: "espresso", number: 4, title: "the original", emoji: "☕️",
+espresso = Enneadrink.create(drink: "espresso", number: 4, title: "the original", emoji: "🚂",
     about: "Espressos are sometimes called 'the romantics of the Enneadrinks.'
     They see the world in terms of beauty, the arts, and authentic expression. They value being original and unique. Espressos are also very aware of their emotional states. They often express their feelings in dance, music, painting, acting, and literature. Many Espressos report growing up with a sense of loss, and therefore they carry a deep sense that something is always missing. There might have been some form of abandonment or neglect, emotional and/or physical, from their childhood or the loss of someone really important to them. They may have interpreted their experience to mean that something was wrong with them, that they weren’t wanted or weren’t special enough to be noticed. To compensate, Espressos learned to present themselves as unique and extra special, so that others would notice them and affirm their worth.",
     strengths: "Espressos express beauty, creativity, and emotional honesty.
@@ -36,7 +36,7 @@ espresso = Enneadrink.create(drink: "espresso", number: 4, title: "the original"
     At some level, Espressos believe they are missing something that other people seem to have. Naturally, this can lead to be envious of others. The driving emotion beneath the surface is shame and a low view of self. Unhealthy Espressos are known to give themselves to a critical, melancholy, depressed, self-loathing spirit. While they don’t like it, they can easily get comfortable in a dark place and wear that for their identity. Their own darkness becomes another means of being different and trying to overcome shame. This is a self-destructive pattern."
 )
 
-latte = Enneadrink.create(drink: "latte", number: 5, title: "the wise", emoji: "🍵",
+latte = Enneadrink.create(drink: "latte", number: 5, title: "the wise", emoji: "🌌",
     about: "Lattes see the world in terms of reason, knowledge, learning, and storing up information.
     Life is about having insights, learning about things, and seeing how everything fits together. They tend to be highly innovative and inventive. Many Lattes report growing up in a disruptive, somewhat intrusive environment. It’s possible that they were interrupted a lot and also emotionally and/or physically neglected. As a result, Lattes learned that it was safer to do everything alone, and they created an intellectual world where they could function and feel safe. They live a compartmentalized life, detached from the their emotions. If you ask Lattes what they feel, they will tell you what they think.",
     strengths: "Lattes are ever fascinated with the world. 
@@ -54,7 +54,7 @@ lemon = Enneadrink.create(drink: "lemon water", number: 6, title: "the loyal", e
     Their besetting struggle is anxiety. They are the most anxious type of all the Enneadrinks. They live in their heads and let their thoughts run away with them. They tend to worry about what they’re going to worry about. It’s not just that they struggle to trust others, but Lemon Waters really struggle to trust themselves. Lemon Waters are plagued with self-doubt. They tirelessly look for some kind of structure to hide in, an environment that will reassure them and make them feel safe and secure and stable. The questions their soul is asking are, Where am I? Am I safe? Unhealthy Lemon Waters are suspicious of others, especially authority."
 )
 
-smoothie = Enneadrink.create(drink: "smoothie", number: 7, title: "the joyful", emoji:"🥤",
+smoothie = Enneadrink.create(drink: "smoothie", number: 7, title: "the joyful", emoji:"🌄",
     about: "Smoothies are all about fun and joy and excitement.
     They are probably the most upbeat, extroverted, outgoing type of the Enneadrinks. They light up a room with their presence. There is a glow and positive energy that emanates from them. Many Smoothies report carrying a deep childhood wound, which they try to avoid at all costs through the pursuit of new experiences, staying active, and entertainment. Their strategy is to repress their traumatic experiences from childhood and paint their life story in positive colors, even when the scenario was anything but beautiful. Appearing to be full of heart, Smoothies actually operate from the head. They carefully think through their lives so that every day will promise as much fun and as little pain as possible.",
     strengths: "Smoothies bring joy and spark into people's lives. 
@@ -63,7 +63,7 @@ smoothie = Enneadrink.create(drink: "smoothie", number: 7, title: "the joyful", 
     Their coping strategy is to have as much entertainment as possible, which is why their besetting struggle is gluttony. Smoothies are prone to constant stimulation and consumption as a way of distracting themselves from an inner anxiety. This is their defense strategy against their emotional pain. They 'gobble up' every experience but are always left hungry for more. Thus, they are always looking for the next thing or the perfect combination of things that will heal them and make them truly happy. They tend to be thrill seekers. Their avoidance of pain and endless hunger for more make them prone to various additions, including chronic anxiety. Unhealthy Smoothies would rather keep relationships on the surface because it would be too painful to know their whole story."
 )
 
-juice = Enneadrink.create(drink: "juice", number: 8, title: "the powerful", emoji: "🧃",
+juice = Enneadrink.create(drink: "juice", number: 8, title: "the powerful", emoji: "🍊",
     about: "Juices are powerful personalities.
     They have a very intense and commanding presence. Juices endeavor to be strong, independent, straightforward, assertive persons who use their strength and influence to make the world a more just place. Juices see the world in black and white— it’s either the greatest or the worst idea of all time, right or wrong, true or false, friend or enemy. Juices are energized by disagreement and don’t like to admit their faults, for this is a sign of weakness. Many Juices report being taken advantage of or treated unfairly in their childhood. As a result,they learned to develop an image of power and strength, believing weakness to be unacceptable. They learned to dominate lest they be dominated. This is their defense strategy.",
     strengths: "Juices are strong and courageous and take a bold stand against injustice.
