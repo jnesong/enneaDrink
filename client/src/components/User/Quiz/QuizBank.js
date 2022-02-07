@@ -35,33 +35,33 @@ const QuizBank = [
         question: "I am more...",
         id: 4,
         answerA: "Impulsive",
-        drinkResultA: "Juice",
+        drinkResultA: 8,
         answerB: "Disciplined",
-        drinkResultB: "Water",
+        drinkResultB: 1,
     },
     {
         question: "I prefer to...",
         id: 5,
         answerA: "help people",
-        drinkResultA: "Tea",
+        drinkResultA: 2,
         answerB: "leave people to their own devices",
-        drinkResultB: "Water"
+        drinkResultB: 1
     },
     {
         question: "I am known as a golden child or role model.",
         id: 6,
         answerA: "Yes",
-        drinkResultA: "Sparkling Water",
+        drinkResultA: 3,
         answerB: "No",
-        drinkResultB: "Lemon Water"
+        drinkResultB: 6
     },
     {
         question: "I generally trust myself.",
         id: 7,
         answerA: "Agree",
-        drinkResultA: "Latte",
+        drinkResultA: 5,
         answerB: "Disagree",
-        drinkResultB: "Lemon Water"
+        drinkResultB: 6
     },
     {
         question: "A clean appearance is important to me.",
@@ -99,9 +99,9 @@ const QuizBank = [
         question: "I can spend a lot of time on social media.",
         id: 12,
         answerA: "Agree",
-        drinkResultA: "Sparkling Water",
+        drinkResultA: 3,
         answerB: "Disagree",
-        drinkResultB: "Latte"
+        drinkResultB: 5
     },
     {
         question: "I prefer to...",
@@ -147,25 +147,25 @@ const QuizBank = [
         question: "I can spend a lot of time on social media.",
         id: 18,
         answerA: "Agree",
-        drinkResultA: "Sparkling Water",
+        drinkResultA: 3,
         answerB: "Disagree",
-        drinkResultB: "Latte"
+        drinkResultB: 5
     },
     {
         question: "I am more interested in exploring...",
         id: 19,
         answerA: "truth/reality",
-        drinkResultA: "Latte",
+        drinkResultA: 5,
         answerB: "love",
-        drinkResultB: "Espresso"
+        drinkResultB: 4
     },
     {
         question: "I am more interested in...",
         id:20,
         answerA: "long term community",
-        drinkResultA: "Tea",
+        drinkResultA: 2,
         answerB: "independence or short term community",
-        drinkResultB: "Smoothie"
+        drinkResultB: 7
     }
 ]
 
