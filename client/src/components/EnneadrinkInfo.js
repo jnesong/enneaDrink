@@ -1,7 +1,7 @@
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-function EnneadrinkInfo() {
+function EnneadrinkInfo({ holdDisplay }) {
     const [error, setError] = useState(null);
 
     const { enneadrinkID } = useParams();
@@ -54,24 +54,25 @@ function EnneadrinkInfo() {
         setContent(healthsList)
     }
 
-    let displayedContent = <p>{content}</p>
+    holdDisplay(content)
 
     console.log(error)
 
     return (
         <>
             <div className="topMargin">
-                <button className="menuItem" onClick={handleAboutClick}> About </button>
-                <button className="menuItem" onClick={handleStrengthsClick}> Strengths </button>
-                <button className="menuItem" onClick={handleWeaknessesClick}> Weaknesses </button>
-                <button className="menuItem" onClick={handlePracticesClick}> Helpful Practices </button>
-                <button className="menuItem" onClick={handleLevelsClick}> Health Levels </button>
-                {<br />}
-                {<br />}
 
-                <div className="space">
-                    {displayedContent}
-                </div>
+                <nav id="descriptionNav">
+                    <NavLink className="enlarge3" onClick={handleAboutClick} to="about "> About </NavLink>
+                    <NavLink className="enlarge3" onClick={handleStrengthsClick} to="strengths"> Strengths </NavLink>
+                    <NavLink className="enlarge3" onClick={handleWeaknessesClick} to="weaknesses"> Weaknesses </NavLink>
+                    <NavLink className="enlarge3" onClick={handlePracticesClick} to="practices"> Helpful Practices </NavLink>
+                    <NavLink className="enlarge3" onClick={handleLevelsClick} to="health"> Health Levels </NavLink>
+                </nav>
+
+                {<br />}
+                {<br />}
+                <Outlet />
 
             </div>
         </>

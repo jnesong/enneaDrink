@@ -9,8 +9,10 @@ function Home() {
 
     return (
         <>
+            {<br />}
+            <p> Welcome, would you like something to drink? </p>
             <DrinkNavBar />
-            
+
             <Outlet />
 
             {<br />}

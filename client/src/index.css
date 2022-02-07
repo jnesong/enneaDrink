@@ -79,13 +79,26 @@ nav a {
 }
 
 .enlarge {
-  transition: transform .2s;
+  transition: transform .8s;
   margin: 10px;
 }
 
-.enlarge2{
-  transition: transform .2s;
+.enlarge2 {
+  transition: transform .8s;
   margin: 50px;
+}
+
+.enlarge3 {
+  transition: transform .8s;
+  text-align: center;
+  font-family: "Optima", sans-serif;
+  color: black;
+  font-size: 25px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 4px;
+  padding: 30px;
 }
 
 .enlarge:hover,
@@ -93,15 +106,20 @@ nav a {
   transform: scale(2.1); 
 }
 
+.enlarge3:hover {
+  color: rgb(166, 186, 178);
+  transform: scale(1.2); 
+}
+
 nav a.active {
   border-bottom: none;
-  transform: scale(2); 
+  transform: scale(1.5) translateY(30px);
   color: rgb(74, 103, 90);
 }
 
 
 #drinkNav {
-  padding-top: 150px;
+  padding-top: 50px;
   margin: 5px;
 }
 

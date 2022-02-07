@@ -8,7 +8,7 @@ function Logout() {
 
 
     function handleLogout() {
-      fetch( "api/logout", {
+      fetch( "/api/logout", {
         method: "DELETE",
       }).then(console.log("bye"))
       setButtonDisplay("bye!");
