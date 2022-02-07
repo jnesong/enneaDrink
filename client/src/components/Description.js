@@ -1,5 +1,3 @@
-
-
 function Description( {content} ) {
 
     console.log(content)

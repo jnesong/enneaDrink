@@ -79,17 +79,17 @@ nav a {
 }
 
 .enlarge {
-  transition: transform .8s;
+  transition: transform .7s;
   margin: 10px;
 }
 
 .enlarge2 {
-  transition: transform .8s;
+  transition: transform .7s;
   margin: 50px;
 }
 
 .enlarge3 {
-  transition: transform .8s;
+  transition: transform .7s;
   text-align: center;
   font-family: "Optima", sans-serif;
   color: black;
@@ -264,7 +264,7 @@ input[type=password] {
   /* border-bottom: 2px solid black; */
   font-size: 20px;
   font-family: "Optima", sans-serif;
-  text-align:center;
+  text-align: center;
   background-color: transparent
 }
 
@@ -289,4 +289,39 @@ input[type=password]:focus {
 
 .emoji {
   font-size: 100px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 35px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  background-image: linear-gradient(to left, rgb(75, 113, 92), rgb(61, 106, 82), rgb(52, 92, 71), rgb(36, 74, 54), rgb(23, 57, 39), rgb(7, 36, 21), rgb(1, 16, 8));   
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 40px;
+  text-align: left;
+}
+
+li.health {
+  margin: 40px;
+}
+
+.title {
+  color: black;
+  margin: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+
+ .fade {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  white-space: pre-wrap;
+}
+
+@keyframes fadeInAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

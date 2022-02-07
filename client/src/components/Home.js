@@ -6,11 +6,14 @@ import Logon from "./User/Logon";
 
 function Home() {
 
+    const welcomeMessage = "Welcome to the Enneadrink, \n a guide to help us understand how we’ve been shaped by our stories \n and provide words that resonate with us, through nine personality-types. \n It is designed to encourage routine self-reflection, by inviting us to \n sit down, have a drink, and process our experiences. "
+
 
     return (
         <>
             {<br />}
-            <p> Welcome, would you like something to drink? </p>
+            <p className="fade" > {welcomeMessage} </p>
+
             <DrinkNavBar />
 
             <Outlet />

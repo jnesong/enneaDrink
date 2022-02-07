@@ -46,11 +46,7 @@ function EnneadrinkInfo({ holdDisplay }) {
         setContent(practicesList)
     }
     function handleLevelsClick() {
-        let healthsList = enneadrink.healths.map(health => (
-
-            `${health.level} : ${health.description} \n`
-
-        ))
+        let healthsList = enneadrink.healths.map((obj) => <li className="health" key={obj.id}> Level {obj.level} : {obj.description} </li>)
         setContent(healthsList)
     }
 
@@ -62,8 +58,8 @@ function EnneadrinkInfo({ holdDisplay }) {
         <>
             <div className="topMargin">
 
-                <nav id="descriptionNav">
-                    <NavLink className="enlarge3" onClick={handleAboutClick} to="about "> About </NavLink>
+                <nav>
+                    <NavLink className="enlarge3" onClick={handleAboutClick} to="about"> About </NavLink>
                     <NavLink className="enlarge3" onClick={handleStrengthsClick} to="strengths"> Strengths </NavLink>
                     <NavLink className="enlarge3" onClick={handleWeaknessesClick} to="weaknesses"> Weaknesses </NavLink>
                     <NavLink className="enlarge3" onClick={handlePracticesClick} to="practices"> Helpful Practices </NavLink>

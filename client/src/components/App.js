@@ -7,6 +7,7 @@ import Journal from "./User/Journal/Journal";
 import Quiz from "./User/Quiz/Quiz";
 import Result from "./User/Quiz/Result";
 import Description from "./Description";
+import HealthDescription from "./HealthDescription";
 
 function App() {
 
@@ -27,7 +28,7 @@ const [displayedContent, setDisplayedContent] = useState("")
             <Route path="strengths" element={<Description content={displayedContent}/>} />
             <Route path="weaknesses" element={<Description content={displayedContent}/>} />
             <Route path="practices" element={<Description content={displayedContent}/>} />
-            <Route path="health" element={<Description content={displayedContent}/>} />
+            <Route path="health" element={<HealthDescription content={displayedContent}/>} />
           </Route>
         </Route>
 
