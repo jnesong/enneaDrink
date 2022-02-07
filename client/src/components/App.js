@@ -19,8 +19,9 @@ function App() {
 
         <Route path="home" element={<UserHome />}>
           <Route path ="quiz" element={<Quiz />} />
-          <Route path="result/:enneadrinkID" element={<Result />} />
         </Route>
+
+        <Route path="result/:enneadrinkID" element={<Result />} />
 
         <Route path="journal" element={<Journal />} />
 

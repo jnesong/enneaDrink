@@ -75,17 +75,17 @@ const QuizBank = [
         question: "An orderly appearance is important to me.",
         id: 9,
         answerA: "Agree",
-        drinkResultA: "Sparkling Water",
+        drinkResultA: 3,
         answerB: "Disagree",
-        drinkResultB: "Tea"
+        drinkResultB: 2
     },
     {
         question: "I tend to be...",
         id: 10,
         answerA: "decisive",
-        drinkResultA: "Tea",
+        drinkResultA: 2,
         answerB: "indecisive",
-        drinkResultB: "Hot Cocoa"
+        drinkResultB: 9
     },
     {
         question: "In relationships, I am more often like...",

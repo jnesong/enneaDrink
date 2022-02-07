@@ -20,7 +20,6 @@ function UserHome() {
 
     return (
         <>
-            {<br />}
             <Logout />
             {<br />}
             <h1> Good morning {user.displayname}, how are you? </h1>

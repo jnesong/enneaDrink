@@ -130,7 +130,7 @@ a.quizLink {
   font-family: "Optima", sans-serif;
 }
 
-a.quizLink.hover {
+a.quizLink:hover {
   border-bottom: none;
   background-color:white;
   color: rgb(166, 186, 178);
