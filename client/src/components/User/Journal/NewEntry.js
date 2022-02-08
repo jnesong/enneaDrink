@@ -103,7 +103,6 @@ function NewEntry() {
                 <textarea
                     className="input-entry"
                     type="text"
-                    placeholder="Enter reflections"
                     name="entry"
                     value={journalData.entry}
                     onChange={handleChange}

@@ -164,7 +164,7 @@ a.quizLink:hover {
 /* Buttons */
 /* Buttons */
 
-.menuItem {
+/* .menuItem {
   text-align: center;
   font-family: "Optima", sans-serif;
   border: none;
@@ -182,10 +182,26 @@ a.quizLink:hover {
 .menuItem:focus {
   background-color:white;
   color: rgb(166, 186, 178);
-}
+} */
 
-.menuItem:focus {
-  font-weight: bold;
+
+.toggle {
+  text-align: center;
+  font-family: "Optima", sans-serif;
+  border: none;
+  background-color:transparent;
+  color: 7, 36, 21;
+  font-size: 25px;
+  display: block;
+  transition-duration: 0.2s;
+  margin-right: auto;
+  margin-left: 100px;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+.toggle:hover {
+  background-color:white;
+  color: rgb(166, 186, 178);
 }
 
 .buttonLogon {
@@ -304,7 +320,7 @@ input[type=password]:focus {
 ::placeholder {
   color: rgb(23, 57, 39);
   font-family: "Optima", sans-serif;
-  text-align:center
+  text-align: center
 }
 
 .greyBody {
@@ -383,4 +399,13 @@ li.health {
 @keyframes fadeInAnimation {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+.pastEntry {
+  text-align: left;
+  margin-left: 200px;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
+  line-height: 40px;
+  letter-spacing: 2px;
 }
