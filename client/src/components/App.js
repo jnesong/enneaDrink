@@ -43,15 +43,12 @@ function App() {
           <Route path="quiz" element={<Quiz />} />
         </Route>
 
-        <Route path="result/*" element={<Result />} >
-          <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
-            <Route index element={<EnneadrinkIndex />} />
-            <Route path="about" element={<Description content={displayedContent} />} />
-            <Route path="strengths" element={<Description content={displayedContent} />} />
-            <Route path="weaknesses" element={<Description content={displayedContent} />} />
-            <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
-            <Route path="health" element={<HealthDescription content={displayedContent} />} />
-          </Route>
+        <Route path="result/:enneadrinkID" element={<Result holdDisplay={holdDisplay} />} >
+          <Route path="about" element={<Description content={displayedContent} />} />
+          <Route path="strengths" element={<Description content={displayedContent} />} />
+          <Route path="weaknesses" element={<Description content={displayedContent} />} />
+          <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
+          <Route path="health" element={<HealthDescription content={displayedContent} />} />
         </Route>
 
         <Route path="journal" element={<Journal />}>
