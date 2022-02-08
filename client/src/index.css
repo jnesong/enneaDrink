@@ -188,7 +188,7 @@ a.quizLink:hover {
   font-weight: bold;
 }
 
-.buttonSubmit {
+.buttonLogon {
   text-align: center;
   font-family: "Optima", sans-serif;
   border: none;
@@ -202,7 +202,7 @@ a.quizLink:hover {
   margin-right: auto;
   letter-spacing: 2px;
 }
-.buttonSubmit:hover {
+.buttonLogon:hover {
   background-color:166, 186, 178;
   color: white;
 }
@@ -241,6 +241,24 @@ a.quizLink:hover {
   letter-spacing: 2px;
 }
 .buttonQuiz:hover {
+  background-color:white;
+  color: rgb(166, 186, 178);
+}
+
+.buttonSubmit {
+  text-align: center;
+  font-family: "Optima", sans-serif;
+  border: none;
+  background-color:transparent;
+  color: rgb(7, 36, 21);
+  padding: 40px;
+  font-size: 20px;
+  display: block;
+  transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttonSubmit:hover {
   background-color:white;
   color: rgb(166, 186, 178);
 }
@@ -296,6 +314,32 @@ input[type=password]:focus {
 }
 
 
+/*Journal Entry Styling*/
+/*Journal Entry Styling*/
+/*Journal Entry Styling*/
+
+.input-entry {
+  width: 90%;
+  height: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-align: left;
+  font-family: "Optima", sans-serif;
+  font-size: 18px;
+}
+
+input[type=date] {
+  /* border: none; */
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "Optima", sans-serif;
+  height: 40px;
+  padding: 10px;
+}
+
 /* Miscellaneous Styling */
 .topMargin {
   margin-top: 80px;
@@ -306,8 +350,8 @@ input[type=password]:focus {
 }
 
 
-ul {
-  list-style-type: none;
+ul, ol {
+  /* list-style-type: none; */
   line-height: 35px;
   letter-spacing: 2px;
   font-size: 20px;

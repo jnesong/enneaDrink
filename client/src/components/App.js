@@ -8,8 +8,11 @@ import Quiz from "./User/Quiz/Quiz";
 import Result from "./User/Quiz/Result";
 import Description from "./Description";
 import HealthDescription from "./HealthDescription";
+import PracticesDescription from "./PracticesDescription";
 import EnneadrinkIndex from "./EnneadrinkIndex";
 import HomeIndex from "./HomeIndex";
+import NewEntry from "./User/Journal/NewEntry";
+import History from "./User/Journal/History";
 
 function App() {
 
@@ -25,13 +28,13 @@ function App() {
       <Routes>
 
         <Route path="/*" element={<Home />}>
-        <Route index element={<HomeIndex />} />
+          <Route index element={<HomeIndex />} />
           <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
             <Route index element={<EnneadrinkIndex />} />
             <Route path="about" element={<Description content={displayedContent} />} />
             <Route path="strengths" element={<Description content={displayedContent} />} />
             <Route path="weaknesses" element={<Description content={displayedContent} />} />
-            <Route path="practices" element={<Description content={displayedContent} />} />
+            <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
             <Route path="health" element={<HealthDescription content={displayedContent} />} />
           </Route>
         </Route>
@@ -40,9 +43,21 @@ function App() {
           <Route path="quiz" element={<Quiz />} />
         </Route>
 
-        <Route path="result/:enneadrinkID" element={<Result />} />
+        <Route path="result/*" element={<Result />} >
+          <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
+            <Route index element={<EnneadrinkIndex />} />
+            <Route path="about" element={<Description content={displayedContent} />} />
+            <Route path="strengths" element={<Description content={displayedContent} />} />
+            <Route path="weaknesses" element={<Description content={displayedContent} />} />
+            <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
+            <Route path="health" element={<HealthDescription content={displayedContent} />} />
+          </Route>
+        </Route>
 
-        <Route path="journal" element={<Journal />} />
+        <Route path="journal" element={<Journal />}>
+          <Route path="new" element={<NewEntry />} />
+          <Route path="history" element={<History />} />
+        </Route>
 
         <Route path="*" element={<h1> Page Not Found 🥲 </h1>} />
 

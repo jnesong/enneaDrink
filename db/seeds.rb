@@ -83,41 +83,66 @@ hotcocoa = Enneadrink.create(drink: "hot cocoa", number: 9, title: "the peaceful
 
 puts "🌱 Seeding practice data..."
 
-practice101 = Practice.create(enneadrink_id: water.id, title: "Journaling confessions", description: "NA")
-practice102 = Practice.create(enneadrink_id: water.id, title: "Nature walks", description: "NA")
-practice103 = Practice.create(enneadrink_id: water.id, title: "Consider: Love arises from our imperfection, from our being imperfect and always in need of the forgiveness.", description: "Uncle Iroh: While it is always best to believe in oneself, a little help from others can be a great blessing.")
+practice101 = Practice.create(enneadrink_id: water.id, title: "Making things better", description: "Waters feel useful when they are able to speak into things, reform things, and make things better.")
+practice102 = Practice.create(enneadrink_id: water.id, title: "Nature walks", description: "A walk through nature can be a calming and emotionally healing discipline for Waters, quieting their inner anger and reorienting them around goodness and beauty.")
+practice103 = Practice.create(enneadrink_id: water.id, title: "Receive love through", description: "Verbal reassurance, sharing work loads, encouragement to have fun and take vacations/breaks.")
+practice104 = Practice.create(enneadrink_id: water.id, title: "Give love through", description: "Listen without fixing, embrace reality over idealism.")
 
-practice201 = Practice.create(enneadrink_id: tea.id, title: "Fasting", description: "NA")
-practice202 = Practice.create(enneadrink_id: tea.id, title: "Deep, encouraging friendship with one or a few people", description: "NA")
-practice203 = Practice.create(enneadrink_id: tea.id, title: "Consider: I am in need, and that's OK.", description: "Uncle Iroh: I know he doesn't want me around right now, but if he needs me, I'll be there.... Toph: Maybe you should tell him that you need him too.")
+# practice103 = Practice.create(enneadrink_id: water.id, title: "Consider: Love arises from our imperfection, from our being imperfect and always in need of the forgiveness.", description: "Uncle Iroh: While it is always best to believe in oneself, a little help from others can be a great blessing.")
 
-practice301 = Practice.create(enneadrink_id: sparkling.id, title: "Fixed-Hour prayer or meditation", description: "NA")
-practice302 = Practice.create(enneadrink_id: sparkling.id, title: "Social media fasts", description: "NA")
-practice303 = Practice.create(enneadrink_id: sparkling.id, title: "Consider: Might invisibility be regarded not simply as refuge, but as a condition with its own meaning and power? It is not about retreating from the world but about finding some genuine alternative to a life of perpetual display.", description: "Uncle Iroh: Pride is not the opposite of shame, but its source. True humility is the only antidote to shame.; The best tea tastes delicious whether it comes in a porcelain pot or a tin cup.")
+practice201 = Practice.create(enneadrink_id: tea.id, title: "Deep, encouraging friendship with one or a few people", description: "Teas tend to be energized by deep friendships and sharing life with others.")
+practice202 = Practice.create(enneadrink_id: tea.id, title: "Fasting", description: "The discipline of fasting is good for Teas because it helps ground them in the reality of their own needs.")
+practice203 = Practice.create(enneadrink_id: tea.id, title: "Receive love through", description: "Sharing fun times together, validate importance, encouragement to accept help.")
+practice204 = Practice.create(enneadrink_id: tea.id, title: "Give love through", description: "Listen without fixing, seek clarity over needs and desires.")
 
-practice401 = Practice.create(enneadrink_id: espresso.id, title: "Journaling thanksgiving", description: "NA")
-practice402 = Practice.create(enneadrink_id: espresso.id, title: "Regular meals in community/with others", description: "NA")
-practice403 = Practice.create(enneadrink_id: espresso.id, title: "Consider: I am the combined effort of everyone I've ever known.", description: "Uncle Iroh: I don't know the answer. Sometimes life is like this dark tunnel. You can't always see the light at the end of the tunnel, but if you just keep moving, you will come to a better place.")
+# practice203 = Practice.create(enneadrink_id: tea.id, title: "Consider: I am in need, and that's OK.", description: "Uncle Iroh: I know he doesn't want me around right now, but if he needs me, I'll be there.... Toph: Maybe you should tell him that you need him too.")
 
-practice501 = Practice.create(enneadrink_id: latte.id, title: "Sharing your thoughts", description: "NA")
-practice502 = Practice.create(enneadrink_id: latte.id, title: "Reading books", description: "NA")
-practice503 = Practice.create(enneadrink_id: latte.id, title: "Consider: There's bravery in being vulnerable.", description: "Uncle Iroh: It is important to draw wisdom from many different places. If you take it from only one place, it becomes rigid and stale.")
+practice301 = Practice.create(enneadrink_id: sparkling.id, title: "Fixed-Hour prayer or meditation", description: "Martin Luther is famous for commenting, 'I have so much to do today that I’m going to need to spend three hours in prayer in order to be able to get it all done.' Sparkling Waters need this perspective. The interruption of prayer or meditation reminds Sparkling Waters to be OK with the journey and less focused on the need to feel they've arrived.")
+practice302 = Practice.create(enneadrink_id: sparkling.id, title: "Social media fasts", description: "Frequent fasts from social media help Sparkling Waters give up false images and provide more emotional margin to be themselves.")
+practice303 = Practice.create(enneadrink_id: sparkling.id, title: "Receive love through", description: "Working together on common goals, acknowledge achievements and successes, encouragement to slow down.")
+practice304 = Practice.create(enneadrink_id: sparkling.id, title: "Give love through", description: "Remember that quality not just efficiency matters, understand people require patience and do not push too hard or too fast.")
 
-practice601 = Practice.create(enneadrink_id: lemon.id, title: "Memorizing grounding truths", description: "NA")
-practice602 = Practice.create(enneadrink_id: lemon.id, title: "Prayer or meditation", description: "NA")
-practice603 = Practice.create(enneadrink_id: lemon.id, title: "Consider: It's OK to trust.", description: "Uncle Iroh: You are stronger and wiser and freer than you have ever been.")
+# practice303 = Practice.create(enneadrink_id: sparkling.id, title: "Consider: Might invisibility be regarded not simply as refuge, but as a condition with its own meaning and power? It is not about retreating from the world but about finding some genuine alternative to a life of perpetual display.", description: "Uncle Iroh: Pride is not the opposite of shame, but its source. True humility is the only antidote to shame.; The best tea tastes delicious whether it comes in a porcelain pot or a tin cup.")
 
-practice701 = Practice.create(enneadrink_id: smoothie.id, title: "Celebration", description: "NA")
-practice702 = Practice.create(enneadrink_id: smoothie.id, title: "Silent solitude", description: "NA")
-practice703 = Practice.create(enneadrink_id: smoothie.id, title: "Consider: Let it go.", description: "Uncle Iroh: Good times become good memories, but bad times make good lessons.")
+practice401 = Practice.create(enneadrink_id: espresso.id, title: "Thanksgiving", description: "Espressos should avoid focusing only on the negative and practice remembering what they have to be thankful for.")
+practice402 = Practice.create(enneadrink_id: espresso.id, title: "Regular meals in community/with others", description: "Fellowship is a necessary rhythm for us all, but especially for Espressos who are prone toward isolation. Espressos need to be with others in order to be drawn out of themselves and toward people.")
+practice403 = Practice.create(enneadrink_id: espresso.id, title: "Receive love through", description: "Verbal appreciation, empathy without fixing, encouragement to pursue creative work.")
+practice404 = Practice.create(enneadrink_id: espresso.id, title: "Give love through", description: "Express appreciation for others, pay attention to others rather than be drawn to introversion.")
+# practice403 = Practice.create(enneadrink_id: espresso.id, title: "Consider: I am the combined effort of everyone I've ever known.", description: "Uncle Iroh: I don't know the answer. Sometimes life is like this dark tunnel. You can't always see the light at the end of the tunnel, but if you just keep moving, you will come to a better place.")
 
-practice801 = Practice.create(enneadrink_id: juice.id, title: "Journaling confessions", description: "NA")
-practice802 = Practice.create(enneadrink_id: juice.id, title: "Deep, encouraging friendship with one or a few people", description: "NA")
-practice803 = Practice.create(enneadrink_id: juice.id, title: "Consider: Gentleness is not weakness.", description: "Uncle Iroh: Sometimes, the best way to solve your own problems is to help someone else.")
+practice501 = Practice.create(enneadrink_id: latte.id, title: "Community service", description: "Lattes are prone to remain inside their heads, in secrecy and introversion. Regular acts of service provide a context for whole-person engagement and transformation.")
+practice502 = Practice.create(enneadrink_id: latte.id, title: "Reading books", description: "Reading on various subject matter is a helpful practice for Lattes.")
+practice503 = Practice.create(enneadrink_id: latte.id, title: "Receive love through", description: "Room for independence/space/privacy, verbal appreciation, encouragement to share thoughts.")
+practice504 = Practice.create(enneadrink_id: latte.id, title: "Give love through", description: "Be emotionally present, be willing to share.")
 
-practice901 = Practice.create(enneadrink_id: hotcocoa.id, title: "Nature walks", description: "NA")
-practice902 = Practice.create(enneadrink_id: hotcocoa.id, title: "Fixed-Hour prayer or meditation", description: "NA")
-practice903 = Practice.create(enneadrink_id: hotcocoa.id, title: "Consider: Your presence and opinion matters.", description: "Uncle Iroh: Perfection and power are overrated. I think you are very wise to choose happiness and love.")
+# practice503 = Practice.create(enneadrink_id: latte.id, title: "Consider: There's bravery in being vulnerable.", description: "Uncle Iroh: It is important to draw wisdom from many different places. If you take it from only one place, it becomes rigid and stale.")
+
+practice601 = Practice.create(enneadrink_id: lemon.id, title: "Memorizing grounding truths", description: "This practice challenges the anxious, busy minds of Lemon Waters. It also provides anchors against over-thinking.")
+practice602 = Practice.create(enneadrink_id: lemon.id, title: "Prayer or meditation", description: "This practice encourages Lemon Waters to slow down and have their fears confronted and peacefully cast out.")
+practice603 = Practice.create(enneadrink_id: lemon.id, title: "Receive love through", description: "Patient listening, verbal reassurance, encouragement to take risks.")
+practice604 = Practice.create(enneadrink_id: lemon.id, title: "Give love through", description: "Trust in the benevolence of others, provide loyalty and stability in relationships, projects, and missions.")
+
+# practice603 = Practice.create(enneadrink_id: lemon.id, title: "Consider: It's OK to trust.", description: "Uncle Iroh: You are stronger and wiser and freer than you have ever been.")
+
+practice701 = Practice.create(enneadrink_id: smoothie.id, title: "Celebration", description: "Smoothies should not feel shame over looking for ways to enjoy life to the fullest. Smoothies will feel alive through engaging with others through a variety of experiences: feasting, laughing, listening to music, watching movies, deep conversation, etc. This will help Smoothies to use these practices as opportunities to open themselves up to others and share their joy and story. The challenge for Smoothies will be to not over-indulge.")
+practice702 = Practice.create(enneadrink_id: smoothie.id, title: "Silent solitude", description: "Solitude releases Smoothies from their stage persona, need to perform, and over-dependence on others. Silence allow them to feel whatever they’re trying to avoid beneath the surface and to meet with their inner being and emotional pain.")
+practice703 = Practice.create(enneadrink_id: smoothie.id, title: "Receive love through", description: "Doing spontaneous things together, discussing stories and visions, gentle encouragement to face problems and pain.")
+practice704 = Practice.create(enneadrink_id: smoothie.id, title: "Give love through", description: "Stay present in difficult circumstances and conversations, pursue commitment to relationships and projects.")
+
+# practice703 = Practice.create(enneadrink_id: smoothie.id, title: "Consider: Let it go.", description: "Uncle Iroh: Good times become good memories, but bad times make good lessons.")
+
+practice801 = Practice.create(enneadrink_id: juice.id, title: "Deep, encouraging friendship with one or a few people", description: "Juices tend to avoid vulnerability and letting others get close out of fear of being controlled by them. To overcome this, Juices need accountability from people they know they can trust. They need a context where they can be known and where they can be weak. If not, Juices will spend their lives hiding their true self behind an image of power.")
+practice802 = Practice.create(enneadrink_id: juice.id, title: "Community service", description: "Juices are filled with compassion for the underdog. It’s not enough for them to speak out against injustice. They feel the need to get involved, to stand in the shoes of those they’re trying to help. They have a great capacity for empathy. Showing compassion by stepping in and physically serving the under-resourced is a way of living into their true selves.")
+practice803 = Practice.create(enneadrink_id: juice.id, title: "Receive love through", description: "Acknowledge contributions and compassion, standing up for justice together, encouragement to cope with stress through exercise or relaxation.")
+practice804 = Practice.create(enneadrink_id: juice.id, title: "Give love through", description: "Carefully gather information and perspective before coming to conclusions, slow down and be willing to wait rather than immediately act with force.")
+
+# practice803 = Practice.create(enneadrink_id: juice.id, title: "Consider: Gentleness is not weakness.", description: "Uncle Iroh: Sometimes, the best way to solve your own problems is to help someone else.")
+
+practice901 = Practice.create(enneadrink_id: hotcocoa.id, title: "Nature retreats", description: "Walking trails, hiking, climbing, biking, jogging, strolling the park or beach return Hot Cocoas to a sense of peace and calm. Nature reminds them that, though we live in a world of chaos, there is hope for peace and order.")
+practice902 = Practice.create(enneadrink_id: hotcocoa.id, title: "Fixed-Hour prayer or meditation", description: "Stopping routinely to pray or meditate is good for Hot Cocoas because it re-centers them. It is a way of calming down and remembering what is most urgent and important. This practice also helps to form diligence, steadfastness, faithfulness, and action.")
+practice903 = Practice.create(enneadrink_id: hotcocoa.id, title: "Receive love through", description: "Patience/space to finish talking, verbal appreciation, encouragement to express frustrations or grievances.")
+practice904 = Practice.create(enneadrink_id: hotcocoa.id, title: "Give love through", description: "Bring harmony in times of conflict, make decisions or name and share thoughts and feelings.")
+# practice903 = Practice.create(enneadrink_id: hotcocoa.id, title: "Consider: Your presence and opinion matters.", description: "Uncle Iroh: Perfection and power are overrated. I think you are very wise to choose happiness and love.")
 
 puts "🌱 Seeding health data..."
 

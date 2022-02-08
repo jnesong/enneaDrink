@@ -2,7 +2,6 @@ import { useParams, NavLink, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function EnneadrinkInfo({ holdDisplay }) {
-    const [error, setError] = useState(null);
 
     const { enneadrinkID } = useParams();
     let fetchPath = `/api/enneadrinks/${enneadrinkID}`
@@ -18,7 +17,7 @@ function EnneadrinkInfo({ holdDisplay }) {
             .catch(err => {
                 if (err.name === 'AbortError') {
                     console.log('fetch aborted');
-                } else { setError(err.message) }
+                } else { console.log(err.message) }
                 ;
             })
         return () => abortCont.abort()
@@ -32,7 +31,6 @@ function EnneadrinkInfo({ holdDisplay }) {
         setContent(enneadrink.about)
     }
 
-
     function handleStrengthsClick() {
         setContent(enneadrink.strengths)
     }
@@ -40,9 +38,7 @@ function EnneadrinkInfo({ holdDisplay }) {
         setContent(enneadrink.weaknesses)
     }
     function handlePracticesClick() {
-        let practicesList = enneadrink.practices.map(practice => (
-            practice.title + "\n"
-        ))
+        let practicesList = enneadrink.practices.map((obj) => <li className="health" key={obj.id}> {obj.title} : {obj.description} </li> )
         setContent(practicesList)
     }
     function handleLevelsClick() {
@@ -51,8 +47,6 @@ function EnneadrinkInfo({ holdDisplay }) {
     }
 
     holdDisplay(content)
-
-    console.log(error)
 
     return (
         <>

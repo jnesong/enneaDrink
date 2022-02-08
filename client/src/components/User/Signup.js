@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Signup({ baseURL }) {
-    const [error, setError] = useState(null);
+function Signup({ }) {
     const [user, setUser] = useState(null);
     const [buttonDisplay, setButtonDisplay] = useState("Signup");
 
@@ -40,11 +39,10 @@ function Signup({ baseURL }) {
                 });
             }
         })
-            .catch(err => { setError(err.message) });
+            .catch(err => { console.log(err.message) });
     };
 
     console.log(user)
-    console.log(error)
 
     return (
         <div className="login">
@@ -85,7 +83,7 @@ function Signup({ baseURL }) {
                         onChange={handleChange}
                     />
 
-                    <button className="buttonSubmit" type="submit"> {buttonDisplay} </button>
+                    <button className="buttonLogon" type="submit"> {buttonDisplay} </button>
 
                 </div>
 
