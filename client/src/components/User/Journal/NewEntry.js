@@ -89,6 +89,7 @@ function NewEntry() {
                         }
                     }}
                     type="text"
+                    maxlength= "1"
                     placeholder="health level"
                     name="level"
                     value={journalData.level}

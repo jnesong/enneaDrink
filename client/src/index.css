@@ -191,7 +191,7 @@ a.quizLink:hover {
   border: none;
   background-color:transparent;
   color: 7, 36, 21;
-  font-size: 25px;
+  font-size: 22px;
   display: block;
   transition-duration: 0.2s;
   margin-right: auto;
@@ -400,12 +400,21 @@ li.health {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 .pastEntry {
   text-align: left;
-  margin-left: 200px;
+  margin-left: 150px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   line-height: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-family: "Optima", sans-serif;
+}
+
+.addSpace {
+  margin-left: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
+  display:inline-block;
 }
