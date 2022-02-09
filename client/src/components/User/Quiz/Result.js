@@ -50,9 +50,9 @@ function Result( {holdDisplay} ) {
             <Link className="quizLink" to="/home/quiz" > restart quiz </Link>
             {<br />}
             <Link className="quizLink" to="/journal" > journal </Link>
-                <h2> result: {enneadrinkResult.drink} </h2>
+                <h2 className="result"> result: {enneadrinkResult.drink} </h2>
                 {<br />}
-                <h3>  {enneadrinkResult.title} </h3>
+                <h3 className="resultT">  {enneadrinkResult.title} </h3>
                 {<br />}
 
                 <nav>

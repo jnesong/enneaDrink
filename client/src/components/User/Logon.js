@@ -26,6 +26,8 @@ function LogOn() {
                     <NavLink className="enlarge4" onClick={handleScroll} to="user/login"> Login </NavLink>
                     <NavLink className="enlarge4" onClick={handleScroll} to="user/signup"> Signup </NavLink>
                 </nav>
+
+                {<br />}
                 
                 <Routes>
                     <Route path="user/login" element={<Login />} />

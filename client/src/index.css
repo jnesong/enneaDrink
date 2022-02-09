@@ -5,48 +5,63 @@ body {
   font-family: "Optima", sans-serif;
   text-align: center;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 p {
   font-size: 20px;
+  font-family: "Optima", sans-serif;
+  font-weight: normal;
   background-image: linear-gradient(to left, rgb(75, 113, 92), rgb(61, 106, 82), rgb(52, 92, 71), rgb(36, 74, 54), rgb(23, 57, 39), rgb(7, 36, 21), rgb(1, 16, 8));   
   -webkit-background-clip: text;
   color: transparent;
-  line-height: 40px;
   letter-spacing: 2px;
   padding-top: 40px;
   padding-left: 70px;
   padding-right: 70px;
+  line-height: 40px;
 }
 
-h1 {
+.paragraph{
+  font-size: 20px;
+  font-family: "Optima", sans-serif;
+  font-weight: normal;
+  background-image: linear-gradient(to left, rgb(75, 113, 92), rgb(61, 106, 82), rgb(52, 92, 71), rgb(36, 74, 54), rgb(23, 57, 39), rgb(7, 36, 21), rgb(1, 16, 8));   
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  line-height: 40px;
+}
+
+.greeting {
   font-size: 30px;
   color:  rgb(23, 57, 39);
   letter-spacing: 4px;
+  font-family: "Optima", sans-serif;
+  font-weight: normal;
 }
 
-h2 {
+.result {
   font-size: 40px;
   color:  rgb(23, 57, 39);
   letter-spacing: 4px;
   font-weight: normal;
   text-transform: capitalize;
+  font-family: "Optima", sans-serif;
 }
 
-h3 {
+.resultT {
   font-size: 30px;
   color:  rgb(23, 57, 39);
   letter-spacing: 4px;
   font-weight: normal;
+  font-family: "Optima", sans-serif;
 }
-
-.space {
-  white-space: pre-wrap;
-} 
 
 /* images */
 /* images */
@@ -105,11 +120,12 @@ nav a {
 .enlarge:hover,
 .enlarge2:hover {
   transform: scale(2.1); 
+  color: rgb(74, 103, 90);
 }
 
 .enlarge3:hover {
   color: rgb(166, 186, 178);
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .enlarge4:hover {
@@ -285,6 +301,7 @@ a.quizLink:hover {
 
 .login {
   font-size: 25px;
+  font-family: "Optima", sans-serif;
   background-color: rgb(166, 186, 178);
   text-align: center;
   width: 100%;
@@ -298,6 +315,7 @@ a.quizLink:hover {
   margin-bottom: 40px;
   padding: 10px;
   background-color: rgb(166, 186, 178);
+  font-family: "Optima", sans-serif;
 }
 
 input[type=text],
@@ -327,6 +345,7 @@ input[type=password]:focus {
   background-color:rgb(166, 186, 178);
   padding-top: 150px;
   padding-bottom: 150px;
+  font-family: "Optima", sans-serif;
 }
 
 
@@ -371,6 +390,7 @@ ul, ol {
   line-height: 35px;
   letter-spacing: 2px;
   font-size: 20px;
+  font-family: "Optima", sans-serif;
   background-image: linear-gradient(to left, rgb(75, 113, 92), rgb(61, 106, 82), rgb(52, 92, 71), rgb(36, 74, 54), rgb(23, 57, 39), rgb(7, 36, 21), rgb(1, 16, 8));   
   -webkit-background-clip: text;
   color: transparent;
@@ -380,6 +400,7 @@ ul, ol {
 
 li.health {
   margin: 40px;
+  font-family: "Optima", sans-serif;
 }
 
 .title {
@@ -387,6 +408,8 @@ li.health {
   margin: 200px;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Optima", sans-serif;
+  line-height: 40px;
  }
 
  .fade {
@@ -394,6 +417,12 @@ li.health {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   white-space: pre-wrap;
+  line-height: 40px;
+}
+
+.editEntry{
+  white-space: pre-wrap;
+  line-height: 40px;
 }
 
 @keyframes fadeInAnimation {
@@ -418,3 +447,7 @@ li.health {
   margin-top: 20px;
   display:inline-block;
 }
+
+.space {
+  white-space: pre-wrap;
+} 

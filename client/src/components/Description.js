@@ -2,10 +2,10 @@ function Description( {content} ) {
 
     console.log(content)
 
-    let displayedContent = <p>{content}</p>
+    let displayedContent = <p className="paragraph">{content}</p>
 
     return (
-        <div className="space">
+        <div className="space" >
             {displayedContent}
         </div>
     )

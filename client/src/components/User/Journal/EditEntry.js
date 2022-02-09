@@ -55,7 +55,7 @@ function EditEntry({ setOpen, journey, holdEdit }) {
 
                 <Modal.Description>
 
-                    <form onSubmit={handleSubmit} className="fade" >
+                    <form onSubmit={handleSubmit} className="editEntry" >
 
                         <div>
 

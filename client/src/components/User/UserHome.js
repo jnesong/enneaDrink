@@ -22,7 +22,7 @@ function UserHome() {
         <>
             <Logout />
             {<br />}
-            <h1> Good morning {user.displayname}, how are you? </h1>
+            <h1 className="greeting"> Good afternoon {user.displayname}, how are you? </h1>
             <nav id="quizNav">
             <NavLink className="enlarge2" to="quiz"> Quiz </NavLink>
             <NavLink className="enlarge2" to="/journal"> Skip Quiz </NavLink>

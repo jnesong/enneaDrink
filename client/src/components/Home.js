@@ -10,10 +10,11 @@ function Home() {
             {<br />}
             <DrinkNavBar />
 
+            {<br />}
+            {<br />}
+
             <Outlet />
 
-            {<br />}
-            {<br />}
             {<br />}
             {<br />}
             {<br />}
