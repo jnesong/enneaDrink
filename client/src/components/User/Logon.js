@@ -14,7 +14,7 @@ function LogOn() {
 
     return (
         <>
-            <img className={"plant"} src={plant2} alt="plant gif" />
+            <img className="plant" src={plant2} alt="plant gif" />
 
             {<br />}
             {<br />}

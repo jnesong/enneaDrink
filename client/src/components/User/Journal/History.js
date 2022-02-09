@@ -12,21 +12,21 @@ function History() {
             .then(data => setJournalHistory(data))
     }, [])
 
-    function holdDeletedID(id){
+    function holdDeletedID(id) {
         const updatedJournalHistory = journalHistory.filter(journey => journey.id !== id)
         setJournalHistory(updatedJournalHistory)
     }
 
-    function holdEdit(editedJourney){
+    function holdEdit(editedJourney) {
         console.log(editedJourney)
         const updatedJournalHistory = journalHistory.map(journey => {
-          if (journey.id === editedJourney.id) {
-            return editedJourney
-          } else {
-            return journey
-          }
-      })
-      setJournalHistory(updatedJournalHistory)
+            if (journey.id === editedJourney.id) {
+                return editedJourney
+            } else {
+                return journey
+            }
+        })
+        setJournalHistory(updatedJournalHistory)
     }
 
     const listPastEntries = journalHistory.map(journey => (
@@ -40,7 +40,8 @@ function History() {
 
     return (
         <>
-        {listPastEntries}
+            {listPastEntries}
+
         </>
     )
 }

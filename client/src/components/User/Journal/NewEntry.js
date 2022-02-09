@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import plantgif from "../../icons/plantgif.gif";
+
 
 function NewEntry() {
 
@@ -7,12 +9,12 @@ function NewEntry() {
 
     const [buttonDisplay, setButtonDisplay] = useState("save");
     const [journalData, setJournalData] = useState({
-      date: "",
-      drink: "",
-      level: null | Number,
-      entry: ""
+        date: "",
+        drink: "",
+        level: null | Number,
+        entry: ""
     });
-  
+
     // useEffect(() => {
     //   fetch(baseURL + "/auth")
     //     .then((response) => {
@@ -22,101 +24,111 @@ function NewEntry() {
     //     });
     //   fetch(baseURL + "/journeys")
     // }, []);
-  
+
     // console.log(user)
-  
+
     const handleChange = (e) => {
-      setJournalData({
-        ...journalData,
-        [e.target.name]: e.target.value,
-      });
+        setJournalData({
+            ...journalData,
+            [e.target.name]: e.target.value,
+        });
     };
-  
+
     function handleSubmit(e) {
-      e.preventDefault()
-  
-      fetch("/api/journeys", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(journalData),
-      }).then(response => {
-        if (response.ok) {
-            response.json().then((data) => console.log(data));
-            setButtonDisplay("✔");
-            setTimeout(() => { navigate("/journal/history") }, 900);
-        } else {
-            response.json().then((errors) => {
-                console.error(errors);
-                setButtonDisplay(errors[0] + ", please try again.");
-            });
-        }
-    })
-        .catch(err => { console.log(err.message) });
-};
+        e.preventDefault()
+
+        fetch("/api/journeys", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(journalData),
+        }).then(response => {
+            if (response.ok) {
+                response.json().then((data) => console.log(data));
+                setButtonDisplay("✔");
+                setTimeout(() => { navigate("/journal/history") }, 900);
+            } else {
+                response.json().then((errors) => {
+                    console.error(errors);
+                    setButtonDisplay(errors[0] + ", please try again.");
+                });
+            }
+        })
+            .catch(err => { console.log(err.message) });
+    };
 
 
     return (
 
-        <form onSubmit={handleSubmit} className="fade" >
+        <>
 
-            <div>
+            <form onSubmit={handleSubmit} className="fade" >
 
-                <label htmlFor="date" />
-                <input
-                    type="date"
-                    name="date"
-                    value={journalData.date}
-                    onChange={handleChange}
-                    onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
-                />
+                <div>
 
-                <label htmlFor="enneadrink" />
-                <input
-                    type="text"
-                    placeholder="drink"
-                    name="drink"
-                    value={journalData.drink}
-                    onChange={handleChange}
-                />
+                    <label htmlFor="date" />
+                    <input
+                        type="date"
+                        name="date"
+                        value={journalData.date}
+                        onChange={handleChange}
+                        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+                    />
 
-                <label htmlFor="level" />
-                <input
-                    onKeyPress={(event) => {
-                        if (!/[1-9]/.test(event.key)) {
-                            event.preventDefault();
-                        }
-                    }}
-                    type="text"
-                    maxlength= "1"
-                    placeholder="health level"
-                    name="level"
-                    value={journalData.level}
-                    onChange={handleChange}
-                />
+                    <label htmlFor="enneadrink" />
+                    <input
+                        type="text"
+                        placeholder="drink"
+                        name="drink"
+                        value={journalData.drink}
+                        onChange={handleChange}
+                    />
 
-                {<br />}
-                {<br />}
-                {<br />}
+                    <label htmlFor="level" />
+                    <input
+                        onKeyPress={(event) => {
+                            if (!/[1-9]/.test(event.key)) {
+                                event.preventDefault();
+                            }
+                        }}
+                        type="text"
+                        maxlength="1"
+                        placeholder="health level"
+                        name="level"
+                        value={journalData.level}
+                        onChange={handleChange}
+                    />
 
-                <label htmlFor="entry" />
-                <textarea
-                    className="input-entry"
-                    type="text"
-                    name="entry"
-                    value={journalData.entry}
-                    onChange={handleChange}
-                    onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
-                />
+                    {<br />}
+                    {<br />}
+                    {<br />}
 
-                <button className="buttonSubmit" type="submit"> {buttonDisplay} </button>
+                    <label htmlFor="entry" />
+                    <textarea
+                        className="input-entry"
+                        type="text"
+                        name="entry"
+                        value={journalData.entry}
+                        onChange={handleChange}
+                        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+                    />
+
+                    <button className="buttonSubmit" type="submit"> {buttonDisplay} </button>
 
 
-            </div>
+                </div>
 
 
-        </form>
+            </form>
+
+            {<br />}
+            {<br />}
+            {<br />}
+
+            <img className="plant" src={plantgif} alt="plant gif" />
+
+        </>
 
     )
 }

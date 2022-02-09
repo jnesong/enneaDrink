@@ -13,31 +13,31 @@ function DrinkNavBar() {
     return (
         <nav id="drinkNav" >
             <NavLink className="enlarge" to="/1">
-                <img src={enneadrink1} alt="water" />
+                <img src={enneadrink1} alt="water" className="drinkImage"/>
             </NavLink>
             <NavLink className="enlarge" to="/2">
-                <img src={enneadrink2} alt="tea" />
+                <img src={enneadrink2} alt="tea" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/3">
-                <img src={enneadrink3} alt="sparkling water" />
+                <img src={enneadrink3} alt="sparkling water" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/4">
-                <img src={enneadrink4} alt="espresso" />
+                <img src={enneadrink4} alt="espresso" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/5">
-                <img src={enneadrink5} alt="latte" />
+                <img src={enneadrink5} alt="latte" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/6">
-                <img src={enneadrink6} alt="lemon water" />
+                <img src={enneadrink6} alt="lemon water" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/7">
-                <img src={enneadrink7} alt="smoothie" />
+                <img src={enneadrink7} alt="smoothie" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/8">
-                <img src={enneadrink8} alt="juice" />
+                <img src={enneadrink8} alt="juice" className="drinkImage" />
             </NavLink>
             <NavLink className="enlarge" to="/9">
-                <img src={enneadrink9} alt="hot cocoa" />
+                <img src={enneadrink9} alt="hot cocoa" className="drinkImage" />
             </NavLink>
 
         </nav>
