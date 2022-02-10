@@ -1,10 +1,8 @@
-import { Button, Icon, Modal } from 'semantic-ui-react'
+import { Button, Modal } from 'semantic-ui-react'
 import { useState } from 'react';
 
 function EditEntry({ setOpen, journey, holdEdit }) {
 
-
-    const [error, setError] = useState(null);
     const [journalData, setJournalData] = useState({
         date: journey.date,
         drink: journey.drink,
@@ -31,11 +29,7 @@ function EditEntry({ setOpen, journey, holdEdit }) {
             body: JSON.stringify(journalData),
         }).then(r => r.json())
             .then(editedJourney => holdEdit(editedJourney))
-            .catch(err => {
-                if (err.name === 'AbortError') {
-                    console.log('fetch aborted');
-                } else { setError(err.message) };
-            })
+            .catch(err => console.log(err))
     };
 
     const style ={
