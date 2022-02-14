@@ -40,7 +40,7 @@ function Login({ }) {
             .catch(err => {console.log(err.message) });
     };
 
-    // console.log(user)
+    console.log(user)
 
     return (
         <div className="login">

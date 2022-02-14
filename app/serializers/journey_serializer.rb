@@ -1,4 +1,5 @@
 class JourneySerializer < ActiveModel::Serializer
-  attributes :id, :date, :drink, :level, :entry
-  has_one :user
+  attributes :id, :date, :drink, :level, :entry, :file
+  # has_one :user
+
 end

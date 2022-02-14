@@ -37,6 +37,6 @@ class Api::JourneysController < ApplicationController
     end
 
     def journey_params 
-        params.permit(:date, :drink, :level, :entry)
+        params.permit(:date, :drink, :level, :entry, :file)
     end
 end

@@ -74,6 +74,15 @@ p {
   width: auto;
 }
 
+.fileImage{
+  display: block;
+  margin: auto;
+  padding: 20px;
+  height: 400px;
+  width: auto;
+  align-items: center;  
+}
+
 .plant {
   display: block;
   margin: auto;
@@ -295,6 +304,7 @@ a.quizLink:hover {
   color: rgb(166, 186, 178);
 }
 
+
 /* Logon Form styling */
 /* Logon Form styling */
 /* Logon Form styling */
@@ -363,16 +373,37 @@ input[type=password]:focus {
   text-align: left;
   font-family: "Optima", sans-serif;
   font-size: 18px;
+  white-space: pre-wrap;
 }
 
-input[type=date] {
+input[type=date]{
   /* border: none; */
   border: 1px solid black;
   border-radius: 4px;
   font-size: 18px;
   font-family: "Optima", sans-serif;
-  height: 40px;
+  height: 50px;
   padding: 10px;
+}
+
+input[type=file] {
+  /* border: none; */
+  border: none;
+  font-size: 18px;
+  font-family: "Optima", sans-serif;
+  height: 60px;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 30px;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: "Optima", sans-serif;
+  background-color: rgb(205, 220, 215);
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 /* Miscellaneous Styling */
@@ -439,6 +470,7 @@ li.health {
   line-height: 40px;
   letter-spacing: 1.5px;
   font-family: "Optima", sans-serif;
+  white-space: pre-wrap;
 }
 
 .addSpace {

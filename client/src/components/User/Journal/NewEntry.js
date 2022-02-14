@@ -6,32 +6,34 @@ import plantgif from "../../icons/plantgif.gif";
 function NewEntry() {
 
     const navigate = useNavigate();
-
+    const [picture, setPicture] = useState("");
+    const [imgData, setImgData] = useState("");
     const [buttonDisplay, setButtonDisplay] = useState("save");
     const [journalData, setJournalData] = useState({
         date: "",
         drink: "",
         level: null | Number,
-        entry: ""
+        entry: "",
+        file: picture.name
     });
-
-    // useEffect(() => {
-    //   fetch(baseURL + "/auth")
-    //     .then((response) => {
-    //       if (response.ok) {
-    //         response.json().then((user) => setUser(user));
-    //       }
-    //     });
-    //   fetch(baseURL + "/journeys")
-    // }, []);
-
-    // console.log(user)
 
     const handleChange = (e) => {
         setJournalData({
             ...journalData,
             [e.target.name]: e.target.value,
         });
+    };
+
+
+    const handleImageChange = (e) => {
+        if (e.target.files[0]) {
+            setPicture(e.target.files[0]);
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                setImgData(reader.result);
+            });
+            reader.readAsDataURL(e.target.files[0]);
+        }
     };
 
     function handleSubmit(e) {
@@ -58,6 +60,7 @@ function NewEntry() {
             .catch(err => { console.log(err.message) });
     };
 
+    console.log(picture.name)
 
     return (
 
@@ -93,7 +96,7 @@ function NewEntry() {
                             }
                         }}
                         type="text"
-                        maxlength="1"
+                        maxLength="1"
                         placeholder="health level"
                         name="level"
                         value={journalData.level}
@@ -113,6 +116,20 @@ function NewEntry() {
                         onChange={handleChange}
                         onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
                     />
+
+                    <div className="addSpace">
+
+                        <label htmlFor="file" />
+                        <input
+                            type="file"
+                            name="file"
+                            accept="image/jpg"
+                            value={journalData.file}
+                            onChange={handleImageChange}
+                        />
+                        {imgData && <img className="fileImage" src={imgData} alt="file" />}
+
+                    </div>
 
                     <button className="buttonSubmit" type="submit"> {buttonDisplay} </button>
 
