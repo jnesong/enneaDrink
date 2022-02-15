@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import plantgif from "../../icons/plantgif.gif";
 
-
 function NewEntry() {
 
     const navigate = useNavigate();
@@ -13,8 +12,7 @@ function NewEntry() {
         date: "",
         drink: "",
         level: null | Number,
-        entry: "",
-        file: picture.name
+        entry: ""
     });
 
     const handleChange = (e) => {
@@ -33,18 +31,20 @@ function NewEntry() {
                 setImgData(reader.result);
             });
             reader.readAsDataURL(e.target.files[0]);
+
         }
     };
 
     function handleSubmit(e) {
         e.preventDefault()
+        const postData = {...journalData, "image": imgData}
 
         fetch("/api/journeys", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(journalData),
+            body: JSON.stringify(postData),
         }).then(response => {
             if (response.ok) {
                 response.json().then((data) => console.log(data));
@@ -60,7 +60,7 @@ function NewEntry() {
             .catch(err => { console.log(err.message) });
     };
 
-    console.log(picture.name)
+    console.log(picture)
 
     return (
 
@@ -119,15 +119,15 @@ function NewEntry() {
 
                     <div className="addSpace">
 
-                        <label htmlFor="file" />
+                        <label htmlFor="image" />
                         <input
                             type="file"
-                            name="file"
+                            name="image"
                             accept="image/jpg"
-                            value={journalData.file}
+                            value={journalData.image}
                             onChange={handleImageChange}
                         />
-                        {imgData && <img className="fileImage" src={imgData} alt="file" />}
+                        {imgData && <img className="fileImage" src={imgData} alt="uploaded file" />}
 
                     </div>
 

@@ -14,6 +14,13 @@ class Api::JourneysController < ApplicationController
 
     def create
         new_journey = @current_user.journeys.create!(journey_params)
+        decoded_data = Base64.decode64(params[:image].split(',')[1])
+        image_data = { 
+            io: StringIO.new(decoded_data),
+            content_type: 'image/jpeg',
+            filename: 'image.jpg'
+        }
+        new_journey.image.attach(image_data)
         # new_journey = Journey.create!(journey_params)
         render json: new_journey, status: :created 
     end
@@ -37,6 +44,6 @@ class Api::JourneysController < ApplicationController
     end
 
     def journey_params 
-        params.permit(:date, :drink, :level, :entry, :file)
+        params.permit(:date, :drink, :level, :entry)
     end
 end
